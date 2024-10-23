@@ -522,8 +522,44 @@ option
     font-size: 14px;
     padding-top: 10px;
 }
-
-
+.get-start
+{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    border: 1px solid #E6533C;
+    border-radius: 15px;
+    padding: 40px;
+}
+.get-start .text
+{
+    width: 50%;
+}
+.text h1
+{
+    font-size: 35px;
+    font-weight: 900;
+    color: #E6533C;
+    margin-bottom: 10px;
+}
+.text h3
+{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.text p
+{
+    margin-bottom: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.493);
+    padding: 5px;
+}
+.get-start img
+{
+    width: 180%;
+}
 
 
 @media screen and ( max-width:576px ) 
@@ -677,5 +713,19 @@ option
     {
         flex-direction: column;
         align-items: start;
+    }
+    .get-start
+    {
+        flex-direction: column-reverse;
+       
+       
+    }
+    .get-start img 
+    {
+       margin-left: -50px;
+    }
+    .get-start .text
+    {
+        width: 100%;
     }
 }
