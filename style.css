@@ -299,7 +299,7 @@ table
 {
     border-collapse: collapse;
 }
-td , th
+.bmi td , .bmi th
 {
     border: 1px solid rgba(255, 255, 255, 0.151);
     padding: 10px;
@@ -388,7 +388,140 @@ option
     border-radius: 42px;
     margin-top: 25px;
 }
+/* meet section */
+.meet
+{
+    
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+   
+}
+.meet>h3
+{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.meet>p
+{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.meet-box1
+{
+    background-image: url(images/trainer1.png);
+    
+}
+.meet-box2
+{
+    background-image: url(images/trainer2.png);
+}
+.meet-box3
+{
+    background-image: url(images/trainer3.png);
+}
+.meet-box4
+{
+    background-image: url(images/trainer4.png);
+    background-position: 80%;
+}
+.meet-box5
+{
+    background-image: url(images/trainer5.png);
+}
+.meet-box6
+{
+    background-image: url(images/trainer6.png);
+    
+}
+.meet-card
+{
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    justify-content: space-evenly ;
+    align-items: center;
+    background-color: #222222;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    border-radius: 14px;
+    
+}
+.meet-box
+{
+    width: 20rem;
+    height: 270px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 18px;
+   
+}
+.mb 
+{
+    margin-bottom: 40px;
+}
 
+/* footer */
+.footer
+{
+    background-color:#222222;
+}
+
+.footer-div
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    padding: 40px 10px;
+}
+
+
+.footer-div p
+{
+    font-size: 23px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.466);
+    padding-right: 25px;
+    padding-bottom: 10px;
+    width: 300px;
+}
+.footer h3
+{
+    font-size: 32px;
+    font-weight: 700;
+    width: 300px;
+    margin-bottom: 20px;
+}
+.footer h1
+{
+    font-size: 70px;
+    font-weight: 900;
+    color: #E6533C;
+    margin-bottom: 20px;
+}
+.footer-div p
+{
+    font-size: 14px;
+    width: 60%;
+    padding-bottom: 20px;
+}
+.rights
+{
+    
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.11);
+    padding-bottom: 20px;
+    font-size: 14px;
+    padding-top: 10px;
+}
 
 
 
@@ -523,5 +656,26 @@ option
     .bmi-div2
     {
         margin-top: 50px;
+    }
+    /* meet */
+    .meet-card
+    {
+        grid-template-columns: repeat(1,300px);
+        gap: 40px;
+        
+       
+    }
+    .meet-box
+    {
+        margin-left: -30px;
+    }
+    .mb
+    {
+        margin-bottom: 0;
+    }
+    .footer-div
+    {
+        flex-direction: column;
+        align-items: start;
     }
 }
