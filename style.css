@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+.inter-miami {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+*
+{
+    margin: 0;
+}
+.header
+{
+    background-image: linear-gradient(to bottom, black, #696868, black);
+}
+
+/* nav  */
+.navigation
+{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navigation h3
+{
+    color: #E6533C;
+    font-size: 36px;
+    font-weight: 800;
+}
+.nav-ul
+{
+    display: flex;
+    gap: 30px;
+    border: 1px solid #ffffff17;
+    padding: 10px;
+    border-radius: 37px;
+    padding-left: 4px;
+}
+.nav-ul li
+{
+    list-style: none;
+}
+.nav-ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+}
+.home-dec
+{
+    font-weight: 600;
+    background-color: #E6533C;
+    padding: 8px 20px;
+    border-radius: 46px;
+}
+.hidden
+{
+ display: none;
+}
+/* banner */
+
+.banner
+{
+    display: flex;
+    justify-content:space-between;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 35px;
+    align-items: center;
+}
+.banner h1
+{
+    font-size: 75px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 20px;
+}
+.hero1
+{
+    width: 50%;
+}
+.shape
+{
+    display: inline-block;
+    font-size: 150px;
+    font-family: 'Miama', sans-serif;
+    font-weight: 400;
+    line-height: 34px;
+                                                
+}
+
+.banner p
+{
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+.banner-btn1
+{
+    background-color: #E6533C;
+    padding: 15px 45px;
+    border-radius: 42px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.banner-btn2
+{
+    background-color: #e6533c00;
+    padding: 15px 45px;
+    border-radius: 42px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.box1
+{
+    border: 1 px solid rgba(255, 255, 255, 0.014);
+    width: 205px;
+    height: 95px;
+    background-color: #30303086;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    position:relative;
+    bottom: 170px;
+    right: 90px;
+    margin-bottom: -90px;
+}
+.ball
+{
+    width: 30px;
+    height: 30px;
+    background-color: #E6533C;
+    border-radius: 50%;
+}
+.box1 h3
+{
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 900;
+    color: white;
+}
+.box2
+{
+    border: 1 px solid rgba(255, 255, 255, 0.014);
+    width: 205px;
+    height: 95px;
+    background-color: #30303086;
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 450px;
+    right: -200px;
+    margin-bottom: -100px;
+}
+.box2 h3
+{
+    font-size: 37px;
+    font-weight: 900;
+    color: white;
+}
+
+
+
+
+
+
+
+@media screen and ( max-width:576px ) 
+{
+    .nav-ul
+    {
+        display: none;
+    }
+    .hidden
+    {
+        display:inline;
+    }
+    .banner
+    {
+        flex-direction: column;
+       
+        /* margin-left: 0; */
+    }
+    .hero1
+    {
+        width: 100%;
+    }
+    .hero2
+    {
+        margin-left: 30px;
+        
+    }
+    .hero2 img 
+    {
+        /* width: 100%; */
+    }
+    .hero1 h1 
+    {
+        font-size: 38px;
+        font-weight: 800;
+    }
+    .shape
+    {
+        font-size: 90px;
+    }
+    .banner-btn
+    {
+        display: flex;
+    }
+    .banner-btn1 , .banner-btn2
+    {
+        padding: 12px 40px;
+        font-size: 14px;
+        font-weight: 500;
+
+    }
+    .box2
+    {
+        width: 150px;
+        height: 70px;
+        bottom: 500px;
+        right: -190px;
+        gap: 3px;
+        padding-top: 20px;
+        margin-bottom: -80px;
+    }
+    .box2 h3 
+    {
+        font-size: 28px;
+        font-weight: 800;
+        
+    }
+    .box2 p 
+    {
+        font-size: 12px;
+    }
+    .box1
+    {
+        width: 150px;
+        height: 70px;
+        bottom: 300px;
+        right: 10px;
+        gap: 3px;
+        padding-top: 10px;
+    }
+    .box2 h3 
+    {
+        font-size: 30px;
+        font-weight: 800;
+        
+    }
+}
